@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ご予約・お問い合わせ | 和味 -nagomi- 出張和食</title>
+<meta name="description" content="出張和食「和味-nagomi-」へのご予約・お問い合わせフォームです。日時・人数・ご希望プランをお知らせください。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">和味<small>NAGOMI &mdash; 出張和食</small></a>
+    <nav class="nav">
+      <a href="index.html">ホーム</a>
+      <a href="menu.html">メニュー</a>
+      <a href="pricing.html">料金</a>
+      <a href="gallery.html">ギャラリー</a>
+      <a href="blog.html">ブログ</a>
+      <a href="about.html">会社概要・アクセス</a>
+      <a href="recruit.html">シェフ募集</a>
+      <a href="contact.html" class="active">ご予約</a>
+    </nav>
+    <button class="nav-toggle" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">CONTACT</span>
+    <h1>ご予約・お問い合わせ</h1>
+    <p>下記フォームにご入力のうえ送信してください。担当者よりメールにてご連絡いたします。</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width: 780px;">
+
+    <form id="reservation-form" novalidate>
+      <div class="form-grid">
+
+        <div class="field">
+          <label for="name">お名前<span class="required">必須</span></label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="field">
+          <label for="email">メールアドレス<span class="required">必須</span></label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="field">
+          <label for="phone">電話番号</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+
+        <div class="field">
+          <label for="date">ご希望日<span class="required">必須</span></label>
+          <input type="date" id="date" name="date" required>
+        </div>
+
+        <div class="field">
+          <label for="guests">ご人数<span class="required">必須</span></label>
+          <input type="number" id="guests" name="guests" min="1" required>
+        </div>
+
+        <div class="field">
+          <label for="plan">ご希望プラン</label>
+          <select id="plan" name="plan">
+            <option value="未定・要相談">未定・要相談</option>
+            <option value="平日懐石">平日懐石</option>
+            <option value="カジュアル会席">カジュアル会席</option>
+            <option value="季節の懐石">季節の懐石</option>
+            <option value="記念日特別懐石">記念日特別懐石</option>
+            <option value="プレミアム懐石コース">プレミアム懐石コース</option>
+            <option value="和食ケータリングプラン（立食）">和食ケータリングプラン（立食）</option>
+            <option value="その他">その他</option>
+          </select>
+        </div>
+
+        <div class="field full">
+          <label for="address">会場ご住所（ご自宅・貸し会場など）</label>
+          <input type="text" id="address" name="address" placeholder="例：東京都○○区○○ 0-0-0">
+        </div>
+
+        <div class="field full">
+          <label for="message">ご要望・アレルギー等</label>
+          <textarea id="message" name="message" placeholder="アレルギーの有無、苦手な食材、ご予算、当日の流れなど、ご自由にご記入ください。"></textarea>
+        </div>
+
+      </div>
+
+      <div class="form-submit">
+        <button type="submit" class="btn btn-fill">この内容でメールを送信する</button>
+        <p class="form-msg" id="form-msg"></p>
+      </div>
+    </form>
+
+    <div class="note-box">
+      <strong>送信について</strong><br>
+      送信ボタンを押すとお使いのメールソフトが起動し、入力内容が本文に自動入力されます。内容をご確認のうえ、そのまま送信してください。<br>
+      メールソフトが起動しない場合は、お手数ですが tianbenguitai@gmail.com 宛に直接ご連絡ください。
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">和味<small>NAGOMI &mdash; 出張和食</small></a>
+        <p>和食専門の出張料理サービスです。ご自宅や会場に伺い、その場で仕立てる本格和食をお届けします。</p>
+      </div>
+      <div class="footer-col">
+        <h4>MENU</h4>
+        <ul>
+          <li><a href="menu.html">メニュー</a></li>
+          <li><a href="pricing.html">料金</a></li>
+          <li><a href="gallery.html">ギャラリー</a></li>
+          <li><a href="blog.html">ブログ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>INFORMATION</h4>
+        <ul>
+          <li><a href="about.html">会社概要・アクセス</a></li>
+          <li><a href="recruit.html">シェフ募集</a></li>
+          <li><a href="contact.html">ご予約・お問い合わせ</a></li>
+          <li>MAIL: tianbenguitai@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; <span data-year></span> 和味 -nagomi-
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
