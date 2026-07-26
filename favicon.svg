@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#faf9f6"/>
+  <rect x="1" y="1" width="62" height="62" fill="none" stroke="#16160f" stroke-width="1.5"/>
+  <text x="32" y="45" font-family="'Hiragino Mincho ProN','Yu Mincho',serif" font-size="38" text-anchor="middle" fill="#16160f">和</text>
+</svg>
